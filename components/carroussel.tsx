@@ -3,7 +3,7 @@
 import {useState, useEffect} from "react";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
-// import Autoplay from "embla-carousel-autoplay"
+import Autoplay from "embla-carousel-autoplay"
 import {
     Carousel,
     CarouselContent,
@@ -35,11 +35,11 @@ const  Fashion: React.FC<FashionProps> =  ({ imageData,title }) => {
     <div className="flex items-center justify-center h-screen flex-col font-[Nimbus] space-y-4 bg-black">
       <h1 className="text-2xl">{title}</h1>
       <Carousel
-      // plugins={[
-      //   Autoplay({
-      //     delay: 2000,
-      //   }),
-      // ]}
+      plugins={[
+        Autoplay({
+          delay: 2000,
+        }),
+      ]}
         opts={{
           loop: true,
           align: "start",
