@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import useEmblaCarousel, {
-  type UseEmblaCarouselType as CarouselApi,
+  type EmblaCarouselType as CarouselApi,
   type EmblaOptionsType as CarouselOptions,
   type EmblaPluginType as CarouselPlugin,
 } from "embla-carousel-react"
